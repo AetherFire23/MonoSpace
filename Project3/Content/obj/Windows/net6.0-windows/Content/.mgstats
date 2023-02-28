@@ -1,0 +1,8 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/balth/source/repos/Project3/Project3/Content/../../../../../OneDrive/Bureau/MonoJeu/Ship_5.png","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/Ship_5.xnb","TextureProcessor","Texture2DContent",585,4181,0.1032967
+"C:/Users/balth/source/repos/Project3/Project3/Content/beams.png","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/beams.xnb","TextureProcessor","Texture2DContent",55098,874245,0.0199351
+"C:/Users/balth/source/repos/Project3/Project3/Content/myfont.spritefont","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/myfont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1739074
+"C:/Users/balth/source/repos/Project3/Project3/Content/Ship_1.png","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/Ship_1.xnb","TextureProcessor","Texture2DContent",609,4181,0.00159
+"C:/Users/balth/source/repos/Project3/Project3/Content/Ship_5.png","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/Ship_5.xnb","TextureProcessor","Texture2DContent",585,4181,0.001589
+"C:/Users/balth/source/repos/Project3/Project3/Content/spr_stars01.png","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/spr_stars01.xnb","TextureProcessor","Texture2DContent",115814,26214485,0.5684936
+"C:/Users/balth/source/repos/Project3/Project3/Content/spr_stars02.png","C:/Users/balth/source/repos/Project3/Project3/Content/bin/Windows/Content/spr_stars02.xnb","TextureProcessor","Texture2DContent",231335,26214485,0.4993458
