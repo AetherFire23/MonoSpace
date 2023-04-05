@@ -1,9 +1,13 @@
-﻿using Project3.Core;
-using SharpDX.XAudio2;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Extended;
+using Project3.Core;
+using Project3.Extensiens;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
+using System.Diagnostics;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +16,9 @@ namespace Project3.GameObjects
     public class MotherShip : GameObject
     {
         private int _health = 10;
+
+        private float _threshold = Camera.ViewPortToWorld(0, 1f).Y;
+
 
         private readonly EnemiesManager _enemiesManager;
         private readonly Character _character;
@@ -26,16 +33,7 @@ namespace Project3.GameObjects
 
         public override void Update()
         {
-            var threshold = Camera.ViewPortToWorld(0f, 1f).Y;
-            var enemiesOnMotherShip = _enemiesManager.Enemies.Where(e => e.Position.Y > threshold && e.Enabled);
-
-            foreach (var enemy in enemiesOnMotherShip)
-            {
-                _health -= 1;
-                
-                Entities.Destroy(enemy);
-
-            }
+            DestroyEnemiesOutsideBounds();
 
             if (_health == 0)
             {
@@ -43,6 +41,17 @@ namespace Project3.GameObjects
             }
         }
 
+        private void DestroyEnemiesOutsideBounds()
+        {
+            var enemiesOnMotherShip = _enemiesManager.Enemies.Where(e => e.Position.Y > _threshold && e.Enabled);
+
+            foreach (var enemy in enemiesOnMotherShip)
+            {
+                _health -= 1;
+
+                Entities.Destroy(enemy);
+            }
+        }
 
         private void GameOver()
         {
@@ -60,7 +69,6 @@ namespace Project3.GameObjects
                 _gui.AddDirect($"You have lost.", Camera.ViewPortToScreen(0.5f, 0.5f));
                 _gui.AddDirect($"You were the only hope for humanity", Camera.ViewPortToScreen(0.5f, 0.55f));
                 _gui.AddDirect($"The depths of space will from now on forever be engulfed in pain", Camera.ViewPortToScreen(0.5f, 0.6f));
-
             }
         }
     }

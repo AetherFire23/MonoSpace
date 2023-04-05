@@ -51,18 +51,15 @@ namespace Project3.GameObjects
         {
             var lasers = colliders.Where(x =>
             x.GetType().Equals(typeof(Laser))
-            || x.GetType().Equals(typeof(RedBomb)
-            ));
+            || x.GetType().Equals(typeof(RedBomb)));
 
             if (!lasers.Any()) return;
-
 
             foreach (var collider in lasers)
             {
                 if (collider.GetType() == typeof(RedBomb)) continue;
 
                 Entities.Destroy(collider);
-
             }
 
             _manager.HandleEnemyDeath(this);

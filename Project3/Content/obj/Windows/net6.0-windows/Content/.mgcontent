@@ -4,16 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/../../../../../OneDrive/Bureau/MonoJeu/Ship_5.png</File>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/beams.png</File>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/myfont.spritefont</File>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/Ship_1.png</File>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/Ship_5.png</File>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/spr_stars01.png</File>
-    <File>C:/Users/balth/source/repos/Project3/Project3/Content/spr_stars02.png</File>
+    <File>C:/Users/balth/source/repos/MonoSpace/Project3/Content/beams.png</File>
+    <File>C:/Users/balth/source/repos/MonoSpace/Project3/Content/myfont.spritefont</File>
+    <File>C:/Users/balth/source/repos/MonoSpace/Project3/Content/Ship_1.png</File>
+    <File>C:/Users/balth/source/repos/MonoSpace/Project3/Content/Ship_5.png</File>
+    <File>C:/Users/balth/source/repos/MonoSpace/Project3/Content/spr_stars01.png</File>
+    <File>C:/Users/balth/source/repos/MonoSpace/Project3/Content/spr_stars02.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>Ship_5.png</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -34,7 +34,8 @@ namespace Project3.Models
             ElapsedFull += Time.Delta;
             ElapsedInterval += Time.Delta;
 
-            if (ElapsedInterval > _intervalMilliseconds) return;
+            bool hasTicked = ElapsedInterval > _intervalMilliseconds;
+            if (hasTicked) return;
             if (_cancelCallback is not null)
             {
                 if (_cancelCallback()) return;

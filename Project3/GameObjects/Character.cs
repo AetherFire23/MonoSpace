@@ -34,6 +34,7 @@ namespace Project3.GameObjects
         }
 
         public override void Update()
+
         {
             TimeSinceLastShooting += Time.Delta;
             TimeSinceLastRedBomb += Time.Delta;

@@ -30,22 +30,31 @@ namespace Project3.Core
 
         public override void Draw()
         {
-            for (int i = 0; i < _messages.Count; i++)
-            {
-                var pos = new Vector2(50, 50 * i);
-                var toScreen = Camera.ScreenToWorld(pos);
-                _spriteBatch.DrawString(Resources.Font, _messages[i], toScreen, Color.Blue);
-            }
+            DrawMessages();
+            DrawDirectScreenText();
 
+            _messages.Clear();
+            _directDraw.Clear();
+        }
+
+        private void DrawDirectScreenText()
+        {
             foreach (var kvp in _directDraw)
             {
                 var toWorld = Camera.ScreenToWorld(kvp.Item2);
                 _spriteBatch.DrawString(Resources.Font, kvp.Item1, toWorld, Color.Blue);
                 //_spriteBatch.DrawString(Resources.Font, kvp.Item1, kvp.Item2, Color.Blue);
             }
+        }
 
-            _messages.Clear();
-            _directDraw.Clear();
+        private void DrawMessages()
+        {
+            for (int i = 0; i < _messages.Count; i++)
+            {
+                var pos = new Vector2(50, 50 * i);
+                var toWorld = Camera.ScreenToWorld(pos);
+                _spriteBatch.DrawString(Resources.Font, _messages[i], toWorld, Color.Blue);
+            }
         }
     }
 }

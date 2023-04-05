@@ -32,8 +32,8 @@ namespace Project3.GameObjects
         {
             _gui = gui;
 
-            _reloadTimer = new TimerAndCallback(300f, ReloadNormalAmmo);
-            _bombRealodTimer = new TimerAndCallback(2500f, ManageBombReload);
+            _reloadTimer = new TimerAndCallback(300f, OnIntervalReloadNormal);
+            _bombRealodTimer = new TimerAndCallback(2500f, OnIntervalReloadBomb);
             Entities.Instantiate(_reloadTimer);
             Entities.Instantiate(_bombRealodTimer);
         }
@@ -61,7 +61,7 @@ namespace Project3.GameObjects
             _gui.AddDirect($"Bomb ready :{this.BombLoaded}", screenPos2);
         }
 
-        private void ManageBombReload()
+        private void OnIntervalReloadBomb()
         {
             _normalReloadTime += Time.Delta;
             if (BombLoaded)
@@ -77,7 +77,7 @@ namespace Project3.GameObjects
             }
         }
 
-        public void ReloadNormalAmmo()
+        public void OnIntervalReloadNormal()
         {
             _bombReloadTime += Time.Delta;
             if (AmmoInPercent == 100)

@@ -13,18 +13,6 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin ../../../../../OneDrive/Bureau/MonoJeu/Ship_5.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:../../../../../OneDrive/Bureau/MonoJeu/Ship_5.png;Ship_5.png
-
 #begin beams.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -55,6 +43,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Ship_1.png
+
+#begin Ship_5.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ship_5.png
 
 #begin Ship_5.png
 /importer:TextureImporter

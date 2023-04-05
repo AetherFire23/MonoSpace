@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\balth\\source\\repos\\Project3\\Project3\\Project3.csproj": {}
+    "C:\\Users\\balth\\source\\repos\\MonoSpace\\Project3\\Project3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\balth\\source\\repos\\Project3\\Project3\\Project3.csproj": {
+    "C:\\Users\\balth\\source\\repos\\MonoSpace\\Project3\\Project3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balth\\source\\repos\\Project3\\Project3\\Project3.csproj",
+        "projectUniqueName": "C:\\Users\\balth\\source\\repos\\MonoSpace\\Project3\\Project3.csproj",
         "projectName": "Project3",
-        "projectPath": "C:\\Users\\balth\\source\\repos\\Project3\\Project3\\Project3.csproj",
+        "projectPath": "C:\\Users\\balth\\source\\repos\\MonoSpace\\Project3\\Project3.csproj",
         "packagesPath": "C:\\Users\\balth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balth\\source\\repos\\Project3\\Project3\\obj\\",
+        "outputPath": "C:\\Users\\balth\\source\\repos\\MonoSpace\\Project3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
